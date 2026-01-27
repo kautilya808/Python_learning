@@ -1,0 +1,21 @@
+word = 1+2
+print(word)
+print(id(word)) #print memory address
+print(type(word)) #print datatype
+del(word) #delete variable
+
+x = str(10)    # typecasting
+y = int(10)    # typecasting
+z = float(10)  # typecasting
+
+
+a,b,c = 10,20,30 #multiple assignments
+print(a,b,c)
+
+
+#####functions#####
+
+def sum(x,y):
+   sum = x + y
+   return sum
+print(sum(5, 10))
