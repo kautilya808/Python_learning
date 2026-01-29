@@ -1,0 +1,168 @@
+word = 1+2
+print(word)
+print(id(word)) #print memory address
+print(type(word)) #print datatype
+del(word) #delete variable
+
+x = str(10)    # typecasting
+y = int(10)    # typecasting
+z = float(10)  # typecasting
+
+
+a,b,c = 10,20,30 #multiple assignments
+print(a,b,c)
+
+
+###DATA TYPES###
+
+1. Python Numeric Data Types
+
+var1 = 1       # int data type
+var2 = True    # bool data type
+var3 = 10.023  # float data type
+var4 = 10+3j   # complex data type
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Python String Data Type
+
+str = 'Hello World!'
+
+print (str)          # Prints complete string
+print (str[0])       # Prints first character of the string
+print (str[2:5])     # Prints characters starting from 3rd to 5th
+print (str[2:])      # Prints string starting from 3rd character
+print (str * 2)      # Prints string two times
+print (str + "TEST") # Prints concatenated string
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Python Sequence Data Types
+Sequence is a collection data type. 
+
+a.List Data Type
+
+Ordered 
+Mutable (you can change, add, remove items) 
+Allows duplicates 
+Uses square brackets []
+
+list = [ 'abcd', 786 , 2.23, 'john', 70.2 ]
+tinylist = [123, 'john']
+
+print (list)            # Prints complete list
+print (list[0])         # Prints first element of the list
+print (list[1:3])       # Prints elements starting from 2nd till 3rd 
+print (list[2:])        # Prints elements starting from 3rd element
+print (tinylist * 2)    # Prints list two times
+print (list + tinylist) # Prints concatenated lists
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+b.Tuple Data Type
+
+A tuple is an ordered, immutable (unchangeable) collection of items.
+
+Key properties
+
+Ordered 
+Immutable (cannot modify)
+Allows duplicates
+Uses parentheses ()
+
+tuple = ( 'abcd', 786 , 2.23, 'john', 70.2  )
+tinytuple = (123, 'john')
+
+print (tuple)               # Prints the complete tuple
+print (tuple[0])            # Prints first element of the tuple
+print (tuple[1:3])          # Prints elements of the tuple starting from 2nd till 3rd 
+print (tuple[2:])           # Prints elements of the tuple starting from 3rd element
+print (tinytuple * 2)       # Prints the contents of the tuple twice
+print (tuple + tinytuple)   # Prints concatenated tuples
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+c.Range Data Type
+
+range represents a sequence of numbers generated on demand.
+Key properties
+Ordered
+Immutable
+Memory efficient (does not store all values)
+Mostly used in loops
+
+range(start, stop, step)
+
+range(5)          # 0,1,2,3,4
+range(1, 6)       # 1,2,3,4,5
+range(1, 10, 2)   # 1,3,5,7,9
+
+for i in range(3):
+    print(i)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+d. Bytes Data Type (ASCII)
+
+b1 = bytes([65, 66, 67, 68, 69])  
+print(b1)  ##b'ABCDE'
+
+e. Dictionary data type
+
+dict_name = {key1: value1, key2: value2}
+
+student = {
+    "name": "Rahul",
+    "age": 22,
+    "course": "Cybersecurity"
+}
+
+
+
+student["name"]          # Rahul
+student.get("grade")     # None
+student.get("grade", "NA")
+
+
+student["age"] = 23
+student["city"] = "Hyderabad"
+
+
+student.pop("age")
+del student["course"]
+student.clear()
+
+
+for k in student: print(k)
+for v in student.values(): print(v)
+for k, v in student.items(): print(k, v)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+######Operators#####
+Operator	Name	Example
+
++	Addition	a + b = 30
+-	Subtraction	a b = -10
+*	Multiplication	a * b = 200
+/	Division	b / a = 2
+%	Modulus	b % a = 0
+**	Exponent	a**b =10**20
+//	Floor Division	9//2 = 4
+
+
+
+a = 21
+b = 10
+c = 0
+
+c = a + b
+print ("a: {} b: {} a+b: {}".format(a,b,c))
+
+
+#####functions#####
+
+def sum(x,y):
+   sum = x + y
+   return sum
+print(sum(5, 10))
