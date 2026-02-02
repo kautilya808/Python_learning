@@ -169,6 +169,37 @@ while i < 6:
   print(i)
   i += 1
 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+##### User Input ######
+
+name = input()
+city = input()
+
+print ("Hello My name is", name)
+print ("I am from ", city)
+
+### By default user input accepts only strings
+
+width = int(input("Enter width : "))
+height = int(input("Enter height : "))
+
+area = width*height
+print ("Area of rectangle = ", area)
+
+
+#! /usr/bin/python3.11
+
+amount = float(input("Enter Amount : "))
+rate = float(input("Enter rate of interest : "))
+
+interest = amount*rate/100
+print ("Amount: ", amount, "Interest: ", interest)
+
+
 #####functions#####
 
 def sum(x,y):
